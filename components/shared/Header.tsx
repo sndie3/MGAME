@@ -7,6 +7,10 @@ import logo from "@/public/assets/images/header.webp"
 import Register from "../features/auth/register/Register";
 import "../../styles/variable.css";
 import Login from "../features/auth/login/Login";
+<<<<<<< HEAD
+=======
+import { useLockBodyScroll } from "@/lib/ScrollLock";
+>>>>>>> master
 
 
 /**
@@ -29,6 +33,11 @@ function Header() {
     const [showRegister, setShowRegister] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
 
+<<<<<<< HEAD
+=======
+    useLockBodyScroll(showRegister)
+    useLockBodyScroll(showLogin)
+>>>>>>> master
     return (
         <>
             <div className="flex w-full h-16 items-center justify-between px-3 bg-white">

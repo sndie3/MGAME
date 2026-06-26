@@ -46,7 +46,11 @@ function Register({ isOpen, onClose, onLogin}: RegisterProps) {
           </button>
         </p>
 
+<<<<<<< HEAD
         <form className="mt-8 space-y-5">
+=======
+        <form className="mt-8 space-y-2">
+>>>>>>> master
           {/* Phone */}
           <div>
             <label className="block text-md font-medium px-1">
@@ -102,7 +106,11 @@ function Register({ isOpen, onClose, onLogin}: RegisterProps) {
 
           <button
             type="submit"
+<<<<<<< HEAD
             className="w-full bg-[var(--secondary-color)] text-[var(--primary-color)] font-bold text-xl py-3 rounded-lg"
+=======
+            className="w-full bg-[var(--secondary-color)] text-[var(--primary-color)] font-bold text-md my-2 py-1.5 rounded-lg"
+>>>>>>> master
           >
             Register
           </button>

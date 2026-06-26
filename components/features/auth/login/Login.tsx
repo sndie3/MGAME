@@ -24,7 +24,11 @@ function Login({ isOpen, onClose, onRegister }: LoginProps) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
+<<<<<<< HEAD
         className="relative w-full max-w-md max-h-3/4 bg-[#f8eeee] rounded-2xl shadow-lg p-8 text-black"
+=======
+        className="relative w-full max-w-md h-auto bg-[#f8eeee] rounded-2xl shadow-lg p-8 text-black"
+>>>>>>> master
       >
         <button
           onClick={onClose}
@@ -47,7 +51,11 @@ function Login({ isOpen, onClose, onRegister }: LoginProps) {
           </button>
         </p>
 
+<<<<<<< HEAD
         <form className="mt-8 space-y-5">
+=======
+        <form className="mt-8 space-y-3">
+>>>>>>> master
           {/* Phone */}
           <div>
             <label className="block text-md font-medium px-1">
@@ -102,7 +110,11 @@ function Login({ isOpen, onClose, onRegister }: LoginProps) {
           </div>
           <button
             type="submit"
+<<<<<<< HEAD
             className="w-full bg-[var(--primary-color)] text-[var(--secondary-color)] font-bold text-xl py-3 rounded-lg"
+=======
+            className="w-full bg-[var(--primary-color)] text-[var(--secondary-color)] font-bold text-md my-2 py-1.5 rounded-lg"
+>>>>>>> master
           >
             Login
           </button>

@@ -2,6 +2,10 @@
 import Header from "@/components/shared/Header";
 import Navbar from "@/components/shared/Navbar";
 import WelcomeModal from "@/components/ui/WelcomeModal";
+<<<<<<< HEAD
+=======
+import { useLockBodyScroll } from "@/lib/ScrollLock";
+>>>>>>> master
 import { useEffect, useState } from "react";
 
 export default function PagesLayout({
@@ -19,6 +23,11 @@ export default function PagesLayout({
             localStorage.setItem("welcome-modal", "true");
         }
     }, []);
+<<<<<<< HEAD
+=======
+
+    useLockBodyScroll(showModal)
+>>>>>>> master
     return (
         <main className="bg-white min-h-screen">
             <WelcomeModal
