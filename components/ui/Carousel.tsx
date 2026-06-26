@@ -31,14 +31,7 @@ function Carousel() {
             className="
                 relative
                 w-full
-<<<<<<< HEAD
-                h-[180px]
-                sm:h-[220px]
-                md:h-[280px]
-                lg:h-[320px]
-=======
                 aspect-[16/6]
->>>>>>> master
                 overflow-hidden
                 rounded-lg
                 px-1
@@ -53,13 +46,8 @@ function Carousel() {
                         alt={`Slide ${index + 1}`}
                         fill
                         priority={index === 0}
-<<<<<<< HEAD
-                        sizes="100vw"
-                        className={`w-full h-full contain transition-all duration-500 ${
-=======
                         sizes="95vw"
                         className={`w-full h-full contain transition-all duration-500 rounded-lg ${
->>>>>>> master
                             current === index
                                 ? 'opacity-100'
                                 : 'opacity-0'

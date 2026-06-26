@@ -5,8 +5,6 @@
   to {
     transform: translateX(-100%);
   }
-<<<<<<< HEAD
-=======
 }
 
 .shine-card {
@@ -37,5 +35,4 @@
 
 .shine-card:hover::before {
   left: 160%;
->>>>>>> master
 }
