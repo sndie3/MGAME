@@ -99,7 +99,14 @@ function Register({ isOpen, onClose, onLogin}: RegisterProps) {
               type="password" 
             />
           </div>
-
+          <div className="relative mx-auto w-full max-w-[600px] aspect-[4] px-2">
+            <Image
+              src="/assets/images/cloud.png"
+              alt="Cloud"
+              fill
+              className="object-contain"
+            />
+          </div>
           <button
             type="submit"
             className="w-full bg-[var(--secondary-color)] text-[var(--primary-color)] font-bold text-md my-2 py-1.5 rounded-lg"

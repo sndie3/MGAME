@@ -26,11 +26,11 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 mt-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-4 md:px-6 lg:px-8">
           {/* Marquee */}
-          <div className="flex items-center overflow-hidden rounded-md bg-[var(--primary-color)] py-2 px-2">
+          <div className="flex items-center overflow-hidden rounded-md bg-[var(--primary-color)] px-2">
             {/* Speaker Icon */}
-            <div className="relative w-8 h-8 flex-shrink-0">
+            <div className="relative w-8 h-7 flex-shrink-0">
               <Image
                 src="/assets/icons/speaker.png"
                 alt="Speaker"

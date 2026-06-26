@@ -53,7 +53,7 @@ const Input: React.FC<InputProps> = ({
             className="absolute right-0 top-1/2 -translate-y-1/2 text-gray-500"
             onClick={() => setShowPassword((prev) => !prev)}
           >
-            {showPassword ? <FaRegEyeSlash size={25}/> : <FaRegEye size={25}/>}
+            {showPassword ? <FaRegEye size={25}/> : <FaRegEyeSlash size={25}/>}
           </button>
         )}
       </div>

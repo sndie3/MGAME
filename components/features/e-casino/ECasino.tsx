@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Featured1 from "@/public/assets/images/JDB017.png";
 import Featured2 from "@/public/assets/images/JDB221.png";
@@ -10,9 +11,11 @@ import Featured7 from "@/public/assets/images/JDB069.png";
 import Featured8 from "@/public/assets/images/JDB086.png";
 import { useRouter } from "next/navigation";
 import "@/styles/utilities.css";
+import Partial from "@/components/ui/PartialModal";
+
 function ECasino() {
   const route = useRouter();
-
+const [isComingSoonOpen, setIsComingSoonOpen] = useState(false);
   return (
     <div className="pt-1">
       {/* Header */}
@@ -29,6 +32,7 @@ function ECasino() {
       {/* Images */}
       <div className="px-1">
         <div
+          onClick={() => setIsComingSoonOpen(true)}
           className="
     grid
     grid-rows-2
@@ -74,11 +78,14 @@ md:auto-cols-auto
                 fill
                 className="rounded-lg object-contain transition-transform duration-300 group-hover:scale-105 "
               />
-              <div className="absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/60 to-transparent transition-transform duration-700 group-hover:translate-x-[250%] pointer-events-none z-10" />
-            </div>
+<div className="absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/60 to-transparent pointer-events-none z-10 animate-shine" />            </div>
           ))}
         </div>
       </div>
+      <Partial
+  isOpen={isComingSoonOpen}
+  onClose={() => setIsComingSoonOpen(false)}
+/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Featured1 from "@/public/assets/images/JDB017.png"
 import Featured2 from "@/public/assets/images/JDB221.png"
 import Featured3 from "@/public/assets/images/JDB035.png"
@@ -27,9 +27,12 @@ import Featured23 from "@/public/assets/images/JDB3.png"
 import Image from 'next/image'
 import Button from '@/components/ui/Button'
 import { useRouter } from 'next/navigation'
+import Partial from '@/components/ui/PartialModal'
 
 function ECasino() {
     const route = useRouter();
+    const [isComingSoonOpen, setIsComingSoonOpen] = useState(false);
+
     return (
 
         <div className="pt-16 pb-20">
@@ -46,11 +49,14 @@ function ECasino() {
                 <div className="px-1">
                     <div className="
                     grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-2
-                ">
-                        {[Featured1, Featured2, Featured3, Featured4, Featured5, Featured6, Featured7, Featured8, Featured9, Featured10, Featured11, Featured12, Featured13, Featured14,Featured15,Featured16,Featured17,Featured18,Featured19,Featured20,Featured21,Featured22,Featured23].map(
+                "
+                        onClick={() => setIsComingSoonOpen(true)}
+                    >
+                        {[Featured1, Featured2, Featured3, Featured4, Featured5, Featured6, Featured7, Featured8, Featured9, Featured10, Featured11, Featured12, Featured13, Featured14, Featured15, Featured16, Featured17, Featured18, Featured19, Featured20, Featured21, Featured22, Featured23, Featured10].map(
                             (image, index) => (
                                 <div
                                     key={index}
+
                                     className="
                         relative
         w-full
@@ -67,9 +73,9 @@ function ECasino() {
                                         // sizes="(max-width: 768px) 150px, 200px"
                                         // loading="lazy"
 
-                                        className="rounded-lg object-contain transition-transform duration-300 group-hover:scale-105"
+                                        className="rounded-lg object-contain transition-transform duration-300 group-hover:scale-105 "
                                     />
-                                    <div className="absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/60 to-transparent transition-transform duration-700 group-hover:translate-x-[250%] pointer-events-none z-10" />
+                                    <div className="absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/60 to-transparent pointer-events-none z-10 animate-shine" />
 
                                 </div>
                             )
@@ -77,6 +83,10 @@ function ECasino() {
                     </div>
                 </div>
             </div>
+            <Partial
+                isOpen={isComingSoonOpen}
+                onClose={() => setIsComingSoonOpen(false)}
+            />
         </div>
 
     )

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Featured() {
   return (
-    <div className="py-5">
+    <div className="py-1">
       {/* Header */}
       <div className="flex justify-between items-center px-1 py-2">
         <h1 className="text-lg font-bold text-blue-600">Featured Games</h1>

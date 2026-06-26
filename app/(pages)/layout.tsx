@@ -10,16 +10,16 @@ export default function PagesLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    const [showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(true);
 
-    useEffect(() => {
-        const seen = localStorage.getItem("welcome-modal");
+    // useEffect(() => {
+    //     const seen = localStorage.getItem("welcome-modal");
 
-        if (!seen) {
-            setShowModal(true);
-            localStorage.setItem("welcome-modal", "true");
-        }
-    }, []);
+    //     if (!seen) {
+    //         setShowModal(true);
+    //         localStorage.setItem("welcome-modal", "true");
+    //     }
+    // }, []);
 
     useLockBodyScroll(showModal)
     return (

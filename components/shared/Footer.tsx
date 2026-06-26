@@ -7,7 +7,7 @@ import React from "react";
  */
 function Footer() {
     return (
-        <footer className="pt-5 pb-5">
+        <footer className="pt-5 pb-5 px-2">
             <div>
                 <p className="text-[var(--primary-color)] font-bold pt-3">Follow Us</p>
                 <div className="flex gap-2">
