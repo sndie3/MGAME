@@ -100,17 +100,18 @@ function Login({ isOpen, onClose, onRegister }: LoginProps) {
               Forgot Password?
             </button>
           </div>
-          <div className="relative mx-auto w-full max-w-[600px] aspect-[4] px-2">
+          <div className="w-full">
             <Image
               src="/assets/images/cloud.png"
-              alt="Cloud"
-              fill
-              className="object-contain"
+              alt="Cloudflare"
+              width={1000}
+              height={200}
+              className="w-full h-auto"
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-[var(--primary-color)] text-[var(--secondary-color)] font-bold text-md my-2 py-1.5 rounded-lg"
+            className="w-full bg-[var(--primary-color)] text-[var(--secondary-color)] font-bold text-md py-1.5 rounded-lg"
           >
             Login
           </button>

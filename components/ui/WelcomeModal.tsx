@@ -16,12 +16,12 @@ export default function WelcomeModal({ isOpen, onClose }: Props) {
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
             <div className="w-full max-w-md rounded-xl bg-[var(--primary-color)] p-6 shadow-xl relative text-xs px-11">
-                <div className="relative w-35 sm:w-52 md:w-45 aspect-[5/2] mx-auto">
+                <div className="relative w-35 sm:w-52 md:w-40 aspect-[5/2] mx-auto">
                     <Image
                         src="/assets/icons/pagcor.png"
                         alt="PAGCOR"
                         fill
-                        className="object-contain"
+                        className=" rounded-lg "
                     />
                 </div>
                 <p className="py-2">

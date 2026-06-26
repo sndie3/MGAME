@@ -5,11 +5,11 @@ import React, { useState } from "react";
 import { FaRegEye, FaRegEyeSlash, FaTimes } from "react-icons/fa";
 
 interface RegisterProps {
-  isOpen:boolean
-  onClose:() => void;
+  isOpen: boolean
+  onClose: () => void;
   onLogin: () => void;
 }
-function Register({ isOpen, onClose, onLogin}: RegisterProps) {
+function Register({ isOpen, onClose, onLogin }: RegisterProps) {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
@@ -40,8 +40,8 @@ function Register({ isOpen, onClose, onLogin}: RegisterProps) {
 
         <p className="text-center text-gray-700 mt-2">
           Already have an account?{" "}
-          <button className="text-[var(--secondary-color)] font-semibold" 
-          onClick={onLogin}>
+          <button className="text-[var(--secondary-color)] font-semibold"
+            onClick={onLogin}>
             Login
           </button>
         </p>
@@ -82,9 +82,9 @@ function Register({ isOpen, onClose, onLogin}: RegisterProps) {
             <label className="block text-md font-medium px-1">
               Create Password:
             </label>
-            <Input 
-              id="password" 
-              type="password" 
+            <Input
+              id="password"
+              type="password"
             />
           </div>
 
@@ -94,17 +94,26 @@ function Register({ isOpen, onClose, onLogin}: RegisterProps) {
               Confirm Password:
             </label>
 
-            <Input 
-              id="confirm_password" 
-              type="password" 
+            <Input
+              id="confirm_password"
+              type="password"
             />
           </div>
-          <div className="relative mx-auto w-full max-w-[600px] aspect-[4] px-2">
+          {/* <div className="relative mx-auto w-full max-w-[600px] aspect-[4] px-2">
             <Image
               src="/assets/images/cloud.png"
               alt="Cloud"
               fill
               className="object-contain"
+            />
+          </div> */}
+          <div className="w-full">
+            <Image
+              src="/assets/images/cloud.png"
+              alt="Cloudflare"
+              width={1000}
+              height={200}
+              className="w-full h-full"
             />
           </div>
           <button

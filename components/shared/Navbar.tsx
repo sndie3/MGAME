@@ -57,9 +57,9 @@ export default function Navbar() {
                 {item.label}
               </span>
 
-              {pathname === item.href && (
+              {/* {pathname === item.href && (
                 <span className="absolute -top-2 w-2 h-2 rounded-full bg-[var(--secondary-color)]" />
-              )}
+              )} */}
             </Link>
           ))}
         </div>
@@ -86,9 +86,9 @@ export default function Navbar() {
                 {item.label}
               </span>
 
-              {pathname === item.href && (
+              {/* {pathname === item.href && (
                 <span className="absolute -top-2 w-2 h-2 rounded-full bg-[var(--secondary-color)]" />
-              )}
+              )} */}
             </Link>
           ))}
         </div>
